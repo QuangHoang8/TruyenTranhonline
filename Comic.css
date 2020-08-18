@@ -1,0 +1,246 @@
+.wrapper{
+    max-width: 1024px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+}
+.logo-menu-area{
+    display: inline-flex;
+}
+.logo-menu{
+    display: inline-flex;
+}
+.Title{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: inline-flex;
+}
+.link{
+    text-decoration: none;
+}
+.input-search{
+    margin-left: 200px;
+    margin-top: 10px;
+    position: relative;
+  }
+  #search{
+      height: 25px;
+  }
+  .icon{
+      position: absolute;
+        top: 4px;
+        left: 3px;
+  }
+  .user{
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .user-item{
+      background-color: #007bff;
+      height: 25px;
+      font-family:'Courier New', Courier, monospace;
+      color: white;
+  }
+  .menu{
+      display: flex;
+      justify-content: space-around;
+      background-color: yellow;
+  }
+  .menu-item{
+      position: relative;
+  }
+  .menu-item>div{
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.menu-item:hover>div{
+    display: block;
+    background-color:whitesmoke; 
+    z-index: 10;
+}
+  .menu-link{
+      font-size: 18px;
+      text-transform: uppercase;
+  }
+  .radio{
+      margin-left: 950px;
+  }
+ 
+  .banner{
+      width: 1024px;
+      height: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+  }
+  .banner-item1{
+    position: absolute;
+    left: 0;
+  }
+  .banner-item2-block1{
+      display: flex;
+      justify-content: space-around;
+  }
+  .banner-item2-block2{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+  #RadioInput2:checked+.banner .banner-item2{
+      transform: translateX(100%);
+      transition: transform 2s;
+  }
+  #RadioInput2:checked+.banner .banner-item1{
+    transform: translateX(0%);
+    transition: transform 2s;
+}
+#RadioInput1:checked+#RadioInput2+.banner .banner-item1{
+    transform: translateX(-100%);
+    transition: transform 2s;
+}
+#RadioInput1:checked+#RadioInput2+.banner .banner-item2{
+    transform: translateX(0%);
+    transition: transform 2s;
+}
+  .banner-item-img{
+      width: 130px;
+      height: 200px;
+  }
+  .item-wrapper {
+    float: left;
+    width: calc(100%/7);
+    padding: 5px 0px;
+}
+.item-wrapper img{
+    max-width: 100%;
+}
+
+.comic-update{
+    background-color:whitesmoke;
+    width: 650px;
+}
+.comic-block{
+    margin-top: 10px;
+    display: inline-flex;
+}
+.comic-block1{
+    display: inline-flex;
+}
+.comic-block2{
+    display: inline-flex;
+    margin-left: 50px;
+}
+.name-block{
+    width: 160px;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.name-block-item{
+    max-width: 130px;
+}
+.img-comic{
+    width: 100px;
+    padding-top: 10px;
+    transition: padding-top 0.5s;
+}
+.img-hover4:hover{
+    padding-top: 0px;
+    transition:  padding-top 0.5s;
+    padding-bottom: 10px;
+}
+.name-chapter{
+    font-family:'Times New Roman', Times, serif;
+    color:black
+}
+.name-chapter:hover{
+    color:red ;
+}
+.img-block-scale{
+    overflow:hidden;
+    position: relative;
+}
+.img-block-scale img{
+    transition: 1s;
+}
+.img-block-scale:hover img{
+    transform: scale(1.5);
+    transition: 1s;
+}
+.img-comic1{
+    width: 100px;
+}
+.photo img{
+    box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+    display: block;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
+  }
+  
+  .photo:hover img{
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+  }
+  .comic-update-history{
+      display: inline-flex;
+  }
+  .img-comic-block{
+      margin-left: 30px;
+  }
+  .history{
+      margin-left: 500px;
+  }
+  .comic-block3{
+      display: inline-flex;
+      margin-top: 10px;
+  }
+  .footer-style{
+      margin-top:50px;
+      margin-left: 300px;
+  }
+  .company>div>img{
+      width: 200px;
+      margin-top:20px;
+      margin-left:100px ;
+  }
+  .Company-name{
+    margin-left:80px ;
+    color:gray;
+  }
+  .img-block{
+      position: relative;
+  }
+  .img-block p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0;
+    transition: all 1s;
+    margin: 0;
+  }
+  .img-block:hover p{
+    font-size: 10px ;
+    z-index: 1;
+  }
+  .text-bg{
+    width: 100px;
+    height: 20px;
+    background-color:whitesmoke;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 0;
+}
+.img-block:hover .text-bg{
+    background-color: brown;
+    bottom: 50%;
+}
